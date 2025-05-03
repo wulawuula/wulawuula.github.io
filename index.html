@@ -28,14 +28,6 @@
     header p {
       margin-top: 0.5em;
     }
-    .profile-photo {
-      display: block;
-      max-width: 150px; /* 调整图片的最大宽度 */
-      height: auto;     /* 保持宽高比例 */
-      border-radius: 50%; /* 圆形头像效果 */
-      margin: 1em auto;
-      border: 3px solid white;
-    }
     main {
       padding: 2em;
       max-width: 900px;
@@ -78,15 +70,13 @@
   <header>
     <h1>Hongyuan Huang</h1>
     <p>Welcome to My Personal Website</p>
-    <!-- 插入个人照片 -->
-    <img src="profile.jpg" alt="Hongyuan Huang's Photo" class="profile-photo">
   </header>
   <main>
     <!-- About Me -->
     <section>
       <h2>🌟 About Me</h2>
       <p>
-        Hi! I'm <strong>Hongyuan Huang</strong>, a passionate learner with academic backgrounds in **Optical and Electronic Information** and **Computer Science and Technology**. 
+        Hi! I'm <strong>Hongyuan Huang</strong>, a passionate learner with academic backgrounds in <strong>Optical and Electronic Information</strong> and <strong>Computer Science and Technology</strong>. 
         I enjoy exploring cutting-edge technology and building impactful solutions through coding, research, and collaboration.
       </p>
     </section>
@@ -94,9 +84,9 @@
     <!-- Education -->
     <section>
       <h2>🎓 Education</h2>
-      <p><strong>Huazhong University of Science and Technology (HUST)</strong></p>
+      <p><strong>Huazhong University of Science and Technology</strong></p>
       <ul>
-        <li>Major: Optical and Electronic Information</li>
+        <li>Major: Optical and Electronic Information Engineering</li>
         <li>Second Major: Computer Science and Technology</li>
       </ul>
     </section>
@@ -106,8 +96,13 @@
       <h2>🛠️ Skills</h2>
       <ul>
         <li><strong>Language:</strong> IELTS 7.0</li>
-        <li><strong>Coding:</strong> Python, C, MATLAB, Assemble Language</li>
-        <li><strong>Modeling:</strong> Inventor</li>
+        <li>
+          <strong>
+            <a href="https://github.com/wulawuula" target="_blank" style="color: #0078d7; text-decoration: none;">Coding</a>:
+          </strong>
+          Python, C, MATLAB, Assemble Language
+        </li>
+        <li><strong>3D-Modeling:</strong> Inventor</li>
         <li><strong>Simulation:</strong> Verilog, Logisim</li>
       </ul>
     </section>
@@ -116,7 +111,14 @@
     <section>
       <h2>🔬 Research Experience</h2>
       <ul>
-        <li>Circuit Design and Assembly</li>
+        <li>
+          <strong>Circuit Design and Assembly</strong>  
+          <p style="margin: 0; padding: 0;">
+            Design a simple digital clock using shift register chips, 7-segment decoders, buzzers, and other components to achieve hour, minute, and second timing, with the ability to trigger buzzer alarms at specified times.
+          </p>
+          <!-- 插入右侧图片 -->
+          <img src="digital_clock.jpg" alt="Digital Clock Design" style="float: right; width: 150px; height: auto; margin-left: 20px; border-radius: 8px;">
+        </li>
         <li>Microcontroller Application and Functional Design</li>
         <li>3D Spatial Light Display Based on Computational Holography Technology</li>
         <li>Machine Learning & Asset Pricing</li>
