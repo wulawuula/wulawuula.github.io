@@ -28,6 +28,14 @@
     header p {
       margin-top: 0.5em;
     }
+    .profile-photo {
+      display: block;
+      max-width: 150px; /* 调整图片的最大宽度 */
+      height: auto;     /* 保持宽高比例 */
+      border-radius: 50%; /* 圆形头像效果 */
+      margin: 1em auto;
+      border: 3px solid white;
+    }
     main {
       padding: 2em;
       max-width: 900px;
@@ -70,6 +78,8 @@
   <header>
     <h1>Hongyuan Huang</h1>
     <p>Welcome to My Personal Website</p>
+    <!-- 插入个人照片 -->
+    <img src="profile.jpg" alt="Hongyuan Huang's Photo" class="profile-photo">
   </header>
   <main>
     <!-- About Me -->
