@@ -86,8 +86,8 @@
       <h2>🎓 Education</h2>
       <p><strong>Huazhong University of Science and Technology</strong></p>
       <ul>
-        <li>Major: Optical and Electronic Information Engineering</li>
-        <li>Second Major: Computer Science and Technology</li>
+        <li>Major: Optical and Electronic Information Engineering  GPA: 89.6</li>
+        <li>Second Major: Computer Science and Technology  GPA: 89.2</li>
       </ul>
     </section>
 
@@ -98,7 +98,9 @@
         <li><strong>Language:</strong> IELTS 7.0</li>
         <li>
           <strong>
-            <a href="https://github.com/wulawuula" target="_blank" style="color: #0078d7; text-decoration: none;">Coding</a>:
+            <a href="https://github.com/wulawuula" target="_blank" style="text-decoration: none;">
+              Coding <span style="font-size: 0.7em; margin-left: 4px;">🔍</span>
+            </a>:
           </strong>
           Python, C, MATLAB, Assemble Language
         </li>
@@ -107,73 +109,334 @@
       </ul>
     </section>
 
-    <!-- Research Experience -->
     <section>
       <h2>🔬 Research Experience</h2>
-      <ul>
-        <li style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-          <!-- 左侧文字部分 -->
+    
+      <!-- ========= 项目 1 ========= -->
+      <h4 style="text-align: center; font-weight: bold; margin: 40px 0;">
+        — —— —— —— —— —— —— —— —— 🔧 Circuit Design and Assembly —— —— —— —— —— —— —— —— —
+      </h4>
+    
+      <!-- 子项目1 -->
+      <div style="display: flex; align-items: flex-start; margin-bottom: 25px;">
+        <div style="flex: 1;">
+          <h5>Design a simple digital clock</h5>
+          <p>Using shift register chips, 7-segment decoders, and other components to achieve hour and minute timing.</p>
+        </div>
+        <img src="photo/digital_clock.png" style="width: 160px; height: auto; border-radius: 6px; margin-left: 20px;" alt="Digital Clock">
+      </div>
+    
+      <!-- 子项目2 -->
+      <div style="display: flex; align-items: flex-start; margin-bottom: 25px;">
+        <div style="flex: 1;">
+          <h5>Design a reversible modulo-4 counter</h5>
+          <p>Designing a reversible modular 4 counter and flowing lights using 74HC74 flip-flops, decoders and others.</p>
+        </div>
+        <img src="photo/flowing_lights.png" style="width: 160px; height: auto; border-radius: 6px; margin-left: 20px;" alt="Modulo-4 Counter">
+      </div>
+    
+      <!-- 子项目3 -->
+      <div style="display: flex; align-items: flex-start; margin-bottom: 25px;">
+        <div style="flex: 1;">
+          <h5>Design a temperature and light adjustment system</h5>
+          <p>Using photoresistors, thermistors, buzzers, and digital tubes to measure temperature, display dates, and automatically adjust brightness of digital tubes based on ambient light.</p>
+        </div>
+        <img src="photo/temperature.png" style="width: 160px; height: auto; border-radius: 6px; margin-left: 20px;" alt="Temperature system">
+      </div>
+    
+      <!-- 子项目4（两个图） -->
+      <div style="display: flex; align-items: flex-start; margin-bottom: 25px;">
+        <div style="flex: 1;">
+          <h5>Model a 3D handheld fan</h5>
+          <p>3D print components, solder the motor and wiring, and assemble a small handheld fan.</p>
+        </div>
+        <div style="display: flex; gap: 10px; margin-left: 20px;">
+          <img src="photo/fan1.png" style="width: 100px; height: auto; border-radius: 6px;" alt="Fan1">
+          <img src="photo/fan2.png" style="width: 100px; height: auto; border-radius: 6px;" alt="Fan2">
+        </div>
+      </div>
+    
+      <!-- ========= 项目 2 ========= -->
+      <h4 style="text-align: center; font-weight: bold; margin: 40px 0;">
+        — —— —— —— —— —— ——  📟 Microcontroller Application and Functional Design —— —— —— —— —— —— —
+      </h4>
+    
+      <!-- 子项目1 -->
+      <div style="display: flex; align-items: flex-start; margin-bottom: 25px;">
+        <div style="flex: 1;">
+          <h5>Basketball Game Timer</h5>
+          <p>Using the C8051F310 microcontroller, design a basketball timer with 1ms precision. The timer counts down 24 seconds and sounds a buzzer for 0.5s when time is up.</p>
+        </div>
+        <video src="photo/C8051F310.mp4" controls style="width: 160px; height: auto; border-radius: 6px; margin-left: 20px;"></video>
+      </div>
+    
+      <!-- 子项目2 -->
+      <div style="display: flex; align-items: flex-start; margin-bottom: 25px;">
+        <div style="flex: 1;">
+          <h5>Bluetooth-Controlled Line-Following Car</h5>
+          <p>Build a chassis using screws and plates, combine it with Arduino UNO and Bluetooth module to enable mobile app control.</p>
+        </div>
+        <video src="photo/car.mp4" controls style="width: 160px; height: auto; border-radius: 6px; margin-left: 20px;"></video>
+      </div>
+    
+      <!-- ========= 项目 3 ========= -->
+      <h4 style="text-align: center; font-weight: bold; margin: 40px 0;">
+        — —— —— —— —— —— 💡 3D Spatial Light Display Based on Computational Holography —— —— —— —— ——
+      </h4>
+    
+      <div style="display: flex; align-items: flex-start; margin-bottom: 25px;">
+        <div style="flex: 1;">
+          <ul>
+            <li>• Capture object and convert to 256-level grayscale image.</li>
+            <li>• Use Gerchberg-Saxton algorithm to compute far-field phase map.</li>
+            <li>• Implement with reflective-phase LCoS SLM to display holograms.</li>
+          </ul>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px; margin-left: 20px;">
+          <img src="photo/3D1.png" style="width: 150px; border-radius: 6px;" alt="Optical Setup">
+          <img src="photo/3D2.png" style="width: 150px; border-radius: 6px;" alt="Holographic">
+        </div>
+      </div>
+
+      <!-- ========= 项目 4 ========= -->
+      <h4 style="text-align: center; font-weight: bold; margin: 40px 0;">
+        — —— —— —— —— —— 🛰️ Beaconless Space Laser Acquisition and Tracking Technology —— —— —— —— ——
+      </h4>
+      
+      <div style="display: flex; align-items: flex-start; margin-bottom: 25px;">
           <div style="flex: 1;">
-            <strong>Circuit Design and Assembly</strong>
-            <p style="margin: 10px 0 0; line-height: 1.6;">
-              Design a simple digital clock using shift register chips, 7-segment decoders, buzzers, and other components to achieve hour, minute, and second timing, with the ability to trigger buzzer alarms at specified times.
-            </p>
+              <ul>
+                  <li>• Successfully passed provincial-level college student innovation project evaluation.</li>
+                  <li>• Designed a spatial scanning scheme to reduce satellite acquisition time, eliminating the need for beacon payload and simplifying satellite design requirements.</li>
+              </ul>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 10px; margin-left: 20px;">
+              <img src="photo/dachuang.png" style="width: 200px; border-radius: 6px;" alt="flowing">
+          </div>
+      </div>
+    
+      <!-- ========= 项目 5 ========= -->
+      <h4 style="text-align: center; font-weight: bold; margin: 40px 0;">
+        —— —— —— —— —— —— —— —— 🤖 Machine Learning & Asset Pricing —— —— —— —— —— —— —— ——
+      </h4>
+      
+      <div style="padding-left: 20px; color: #555; font-size: 0.95em; line-height: 1.6;">
+        <p style="margin: 5px 0;">
+          • In my sophomore year, I joined Professor He Nie's <strong>ML + Asset Pricing research group</strong> at Wuhan University, where we explored the intersection of machine learning and financial economics. Each week, we shared and discussed cutting-edge research papers in the field.
+        </p>
+        <p style="margin: 12px 0;">
+          • My personal research focused on analyzing the impact of investor sentiment in online forums on the <strong>IPO first-day return</strong>. I developed a data pipeline using <strong>asynchronous coroutines</strong> and <strong>IP pools</strong> to overcome scraping limitations and collect large volumes of user comments from Eastmoney's IPO discussion boards. 
+        </p>
+        <p style="margin: 12px 0;">
+          • These comments were then evaluated using a <strong>fine-tuned GPT-3.5 model</strong> for sentiment scoring. Through statistical analysis, I found a significant <strong>positive correlation</strong> between user sentiment and the IPO's first-day return, suggesting a predictive relationship between online sentiment and short-term market performance.
+        </p>
+      </div>
+
+    
+      <!-- ========= 项目 6 ========= -->
+      <h4 style="text-align: center; font-weight: bold; margin: 40px 0;">
+        — —— —— —— —— —— 📈 Financial Time Series Prediction with Pattern Recognition —— —— —— —— —— —
+      </h4>
+      
+      <div style="padding-left: 20px; color: #555; font-size: 0.95em; line-height: 1.6;">
+        <p style="margin: 5px 0;">
+          • Selected as one of <strong>200 top undergraduates</strong> for a prestigious Mitacs Globalink Research Internship in Canada in 2025 summer.
+        </p>
+        <p style="margin: 12px 0;">
+          • Under the supervision of 
+            <strong>
+            <a href="https://www2.cs.uregina.ca/~jtyao/" target="_blank" style="text-decoration: none;">
+              Dr. JingTao Yao <span style="font-size: 0.7em; margin-left: 4px;">🔍</span>
+            </a>
+            </strong> 
+            from the Department of Computer Science at the University of Regina, the research project will focus on <strong>financial time series forecasting</strong> using advanced <strong>pattern recognition and classification techniques</strong>.
+      </div>
+    
+    </section>
+
+      <!-- Publications -->
+      <section>
+        <h2>📚 Publication</h2>
+      
+        <div style="display: flex; align-items: flex-start; margin-top: 10px; gap: 20px;">
+          
+          <!-- 左侧文本部分 -->
+          <div style="flex: 1;">
+            <a 
+              href="https://ieeexplore.ieee.org/abstract/document/10926106/" 
+              style="text-decoration: none; color: inherit;"
+            >
+              <strong>
+                A Combined Alignment Method with Beam Incident Angle Measurement and Laser Nutation Alignment in Common Optical Path FSOC System
+              </strong>
+              <span style="font-size: 0.85em;">🔍</span>
+            </a>
+            
+            <div style="color: #555; font-size: 0.95em; margin-top: 8px;">
+              <p style="margin: 5px 0;">
+                A multi-core optical fiber sensor is used to detect the incident light beam. By measuring the incident light power intensity of each fiber and the spatial deflection angle of the incident beam, a deep neural network is utilized to achieve rapid beam alignment.
+              </p>
+            </div>
+          </div>
+      
+          <!-- 右侧图片部分 -->
+          <img 
+            src="photo/publication.png" 
+            alt="FSOC setup" 
+            style="width: 180px; height: auto; border-radius: 6px;"
+          />
+          
+        </div>
+      </section>
+
+      <!-- Internship -->
+      <section>
+        <h2>💼 Internship</h2>
+
+        <!-- 添加的引言性说明 -->
+        <p style="color: #555; font-size: 0.95em; margin-top: 10px; margin-bottom: 25px; line-height: 1.6;">
+          <em>
+            During my freshman and sophomore years, I had a strong interest in finance, 
+            so I seized the opportunity to take on multiple internships in this industry 
+            to gain deeper insights. (PS: However, after immersing myself in the financial 
+            field through extensive experiences, I realized that I am more intellectually 
+            drawn to Computer Science and ECE-related directions.)
+          </em>
+        </p>
+
+        <ul style="list-style: none; padding-left: 0;">
+          <!-- 实习1 -->
+          <li style="margin-bottom: 20px;">
+            <div style="font-weight: bold; margin-bottom: 5px;">
+              Hangzhou Changhua Longxue Information Technology Co., LTD
+            </div>
+            <div style="padding-left: 20px; color: #555; font-size: 0.95em;">
+              <p style="margin: 5px 0;">• Designed and maintained trading strategies across primary markets (IDO/IEO participation) and secondary markets (arbitrage strategy/trend following)</p>
+              <p style="margin: 5px 0;">• Independently developed an arbitrage strategy based on token trend correlation, which has now entered the stage of real market testing</p>
+              <p style="margin: 5px 0;">• Currently developing a smart wallet and launch strategy, while also monitoring high-profile influencers on Twitter.</p>
+            </div>
+          </li>
+        </ul>
+        
+          <!-- 实习2 -->
+          <li style="margin-bottom: 20px;">
+            <div style="font-weight: bold; margin-bottom: 5px;">
+              Guotai Junan Securities, Hubei Branch
+            </div>
+            <div style="padding-left: 20px; color: #555; font-size: 0.95em;">
+              <p style="margin: 5px 0;">• Attended the departmental work meeting, recorded the key points of the meeting, and summarized the market trends and future investment strategies. </p>
+              <p style="margin: 5px 0;">• Studied investment research reports, reproduced and backtested some research strategies, and focused on studying the establishment and application of factor models.</p>
+              <p style="margin: 5px 0;">• Utilized Python and Excel to analyze the returns of fund products and visualize the data.</p>
+            </div>
+          </li>
+        
+          <!-- 实习3 -->
+          <li style="margin-bottom: 20px;">
+            <div style="font-weight: bold; margin-bottom: 5px;">
+              Changjiang Securities Company Limited, Wuhan
+            </div>
+            <div style="padding-left: 20px; color: #555; font-size: 0.95em;">
+              <p style="margin: 5px 0;">• Reviewed the information and system data released by the department to ensure the accuracy regarding the Net Asset Value growth.</p>
+              <p style="margin: 5px 0;">• Utilised Python to crawl data from the public disclosures on private offerings by the Asset Management Association of China</p>
+              <p style="margin: 5px 0;">• Proofread two performance analysis reports on private equity investments and verified the daily returns</p>
+              <p style="margin: 5px 0;">• Wrote a Python wrapper program to batch process Excel files.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Awards -->
+      <section>
+        <h2>🏆 Awards</h2>
+        <ul>
+          <li>
+            <strong>National Scholarship</strong>
+          </li>
+          <li>
+            <strong>Merit Student</strong>
+          </li>
+          <li>
+            <strong>Fenhu Science and Technology Innovation Scholarship </strong><em>(2/376)</em>
+          </li>
+          <li>
+            <strong>First Prize, Mathematics Competition of Chinese</strong>
+          </li>
+          <li>
+            <strong>Second Prize, China Undergraduate Mathematical Contest in Modeling</strong>
+          </li>
+          <li style="display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              <strong>Third Prize in the School Competition, The Challenge Cup</strong>
+              <div style="padding-left: 20px; color: #666; font-size: 0.9em; font-style: italic; margin-top: 3px;">
+                Empowering museums through technology by pioneering a new approach combining spectral and ultra-HD imaging for artifact conservation and collection management.
+              </div>
+            </div>
+            <img src="photo/challenge.png" alt="Challenge Cup Award" style="max-width: 180px; margin-left: 10px; border-radius: 6px;">
+          </li>
+        </ul>
+      </section>
+
+      <!-- Volunteer Service -->
+      <section>
+        <h2 style="margin-bottom: 25px;">🤝 Volunteer Service</h2>
+        <p style="margin-bottom: 25px; color: #555; line-height: 1.6; font-size: 1.05em;">
+            Beyond academic studies and research, I enjoy participating in various volunteer activities. 
+            Not only does it allow me to help others, but I also get to meet many interesting people 
+            through these experiences. To date, I've accumulated 142 hours of volunteer service.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 25px;">
+          <!-- Animal Rescue -->
+          <div style="background: #f8f9fa; border-radius: 12px; padding: 20px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <img src="photo/rescure_animals.jpg" alt="Animal Rescue" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+            <h3 style="margin: 0 0 10px; color: #2c3e50; font-size: 1.1em;">Rescue Animals</h3>
+            <p style="margin: 0; color: #7f8c8d; font-size: 0.95em; line-height: 1.4;">Providing care and shelter for stray animals</p>
           </div>
         
-          <!-- 右侧图片部分 -->
-          <div style="margin-left: 20px;">
-            <img src="photo/digital_clock.png" alt="Digital Clock Design" style="width: 200px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);">
+          <!-- Plant Trees -->
+          <div style="background: #f8f9fa; border-radius: 12px; padding: 20px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <img src="photo/plantting.jpg" alt="Plant Trees" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+            <h3 style="margin: 0 0 10px; color: #2c3e50; font-size: 1.1em;">Plant Trees</h3>
+            <p style="margin: 0; color: #7f8c8d; font-size: 0.95em; line-height: 1.4;">Urban afforestation initiatives</p>
           </div>
-        </li>
-        <li>Microcontroller Application and Functional Design</li>
-        <li>3D Spatial Light Display Based on Computational Holography Technology</li>
-        <li>Machine Learning & Asset Pricing</li>
-        <li>Financial time series prediction with pattern classification/recognition techniques</li>
-      </ul>
-    </section>
+        
+          <!-- Plastic Recycling -->
+          <div style="background: #f8f9fa; border-radius: 12px; padding: 20px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <img src="photo/recycling.jpeg" alt="Recycle Plastic" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+            <h3 style="margin: 0 0 10px; color: #2c3e50; font-size: 1.1em;">Recycling Plastic</h3>
+            <p style="margin: 0; color: #7f8c8d; font-size: 0.95em; line-height: 1.4;">Community recycling program</p>
+          </div>
+        
+          <!-- Books Recycling -->
+          <div style="background: #f8f9fa; border-radius: 12px; padding: 20px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <img src="photo/books.jpg" alt="Clothes Recycling" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+            <h3 style="margin: 0 0 10px; color: #2c3e50; font-size: 1.1em;">Books Recycling</h3>
+            <p style="margin: 0; color: #7f8c8d; font-size: 0.95em; line-height: 1.4;">Donation drives & textile recycling</p>
+          </div>
+        
+          <!-- Zoo Maintenance -->
+          <div style="background: #f8f9fa; border-radius: 12px; padding: 20px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <img src="photo/zoo.jpg" alt="Zoo Maintenance" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+            <h3 style="margin: 0 0 10px; color: #2c3e50; font-size: 1.1em;">Zoo Maintenance</h3>
+            <p style="margin: 0; color: #7f8c8d; font-size: 0.95em; line-height: 1.4;">Visitor guidance & animal welfare</p>
+          </div>
 
-    <!-- Publications -->
-    <section>
-      <h2>📚 Publication</h2>
-      <ul>
-        <li><strong>A Combined Alignment Method with Beam Incident Angle Measurement and Laser Nutation Alignment in Common Optical Path FSOC System</strong></li>
-      </ul>
-    </section>
-
-    <!-- Internship -->
-    <section>
-      <h2>💼 Internship</h2>
-      <ul>
-        <li>Hangzhou Changhua Longxue Information Technology Co., LTD</li>
-        <li>Guotai Junan Securities, Hubei Branch</li>
-        <li>Changjiang Securities Company Limited, Wuhan</li>
-      </ul>
-    </section>
-
-    <!-- Awards -->
-    <section>
-      <h2>🏆 Awards</h2>
-      <ul>
-        <li>National Scholarship</li>
-        <li>Merit Student</li>
-        <li>Fenhu Science and Technology Innovation Scholarship</li>
-        <li>First Prize, Mathematics Competition of Chinese</li>
-        <li>Second Prize, China Undergraduate Mathematical Contest in Modeling</li>
-        <li>Third Prize in the School Competition, The Challenge Cup</li>
-      </ul>
-    </section>
-
-    <!-- Volunteer Service -->
-    <section>
-      <h2>🤝 Volunteer Service</h2>
-      <ul>
-        <li>Rescue animals</li>
-        <li>Plant trees</li>
-        <li>Recycling plastic bottles</li>
-        <li>Recycle old clothes</li>
-        <li>Maintaining order in the zoo</li>
-      </ul>
-    </section>
+          <!-- Ellipsis Placeholder -->
+          <div style="background: #f8f9fa; border-radius: 12px; padding: 20px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <div style="width: 100%; height: 160px; display: flex; justify-content: center; align-items: center; margin-bottom: 15px; font-size: 3em; color: #ccc;">
+              ...
+            </div>
+            <h3 style="margin: 0 0 10px; color: #2c3e50; font-size: 1.1em;">And More</h3>
+            <p style="margin: 0; color: #7f8c8d; font-size: 0.95em; line-height: 1.4;">Other volunteer activities</p>
+          </div>
+        </div>
+        
+        <style>
+          div[style*="box-shadow"]:hover {
+            transform: translateY(-5px);
+            box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);;
+          }
+        </style>
+      </section>
   </main>
   <footer>
     <p>&copy; 2025 Hongyuan Huang. All Rights Reserved.</p>
