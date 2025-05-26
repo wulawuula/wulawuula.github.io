@@ -20,6 +20,7 @@
       color: white;
       text-align: center;
       padding: 1em 0;
+      position: relative;
     }
     header h1 {
       margin: 0;
@@ -27,6 +28,29 @@
     }
     header p {
       margin-top: 0.5em;
+    }
+    .contact-info {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background-color: rgba(255,255,255,0.9);
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-align: left;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .contact-info p {
+      margin: 5px 0;
+      font-size: 0.9em;
+      color: #333;
+    }
+    .contact-info a {
+      color: #0078d7;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
     }
     main {
       padding: 2em;
@@ -64,13 +88,31 @@
     a:hover {
       text-decoration: underline;
     }
+    @media (max-width: 768px) {
+      .contact-info {
+        position: static;
+        transform: none;
+        margin: 15px auto;
+        width: fit-content;
+        text-align: center;
+      }
+      header {
+        padding-bottom: 1.5em;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
+    <div class="contact-info">
+      <p><strong>Contact:</strong></p>
+      <p>✉️ <a href="mailto:hhyuan@hust.edu.cn">hhyuan@hust.edu.cn</a></p>
+      <p><img src="https://open.weixin.qq.com/zh_CN/htmledition/res/assets/res-design-download/icon16_wx_logo.png" alt="WeChat" style="vertical-align: middle; width: 16px; height: 16px;"> <a href="wechat:wulalala04"> wulalala04</a></p>
+    </div>
     <h1>Hongyuan Huang</h1>
     <p>Welcome to My Personal Website</p>
   </header>
+
   <main>
     <!-- About Me -->
     <section>
@@ -167,7 +209,7 @@
           <h5>Basketball Game Timer</h5>
           <p>Using the C8051F310 microcontroller, design a basketball timer with 1ms precision. The timer counts down 24 seconds and sounds a buzzer for 0.5s when time is up.</p>
         </div>
-        <video src="photo/C8051F310test.mp4" controls style="width: 160px; height: auto; border-radius: 6px; margin-left: 20px;"></video>
+        <video src="photo/C8051F310.mp4" controls style="width: 160px; height: auto; border-radius: 6px; margin-left: 20px;"></video>
       </div>
     
       <!-- 子项目2 -->
